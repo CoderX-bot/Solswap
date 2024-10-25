@@ -1,0 +1,21 @@
+{
+  "name": "nodejs",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "scripts": {
+    "start": "node dist/index.js",    // Start the bot using the compiled JavaScript
+    "build": "tsc",                   // Compile TypeScript to JavaScript
+    "dev": "ts-node index.ts"         // Use ts-node for development without compiling
+  },
+  "dependencies": {
+    "@jup-ag/api": "^0.1.0",          // Jupiter API package
+    "@solana/web3.js": "^1.46.0",     // Solana web3 package
+    "@solana/spl-token": "^0.2.0",    // SPL Token package for Solana
+    "express": "^4.18.2",             // Express for handling webhooks
+    "dotenv": "^10.0.0"               // dotenv for loading environment variables
+  },
+  "devDependencies": {
+    "typescript": "^4.5.5",           // TypeScript
+    "ts-node": "^10.4.0"              // ts-node for running TypeScript files directly
+  }
+}

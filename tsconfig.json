@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",                    // Target ECMAScript 2020 for modern syntax support
+    "module": "CommonJS",                  // Module system for Node.js
+    "outDir": "./dist",                    // Output directory for compiled JavaScript files
+    "esModuleInterop": true,               // Allows default import from CommonJS modules
+    "strict": true,                        // Enable strict type checking
+    "skipLibCheck": true,                  // Skip type checks on declaration files
+    "moduleResolution": "node"             // Resolve modules similar to Node.js
+  },
+  "include": ["./*.ts"],                   // Include all .ts files in the root
+  "exclude": ["node_modules"]              // Exclude dependencies
+}
